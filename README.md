@@ -16,14 +16,14 @@
 <br>
 
 ## 📃Description
-  This is my Personal webpage created by tailwind. I also use JavaScript in this webpage to have a more dynamic website.
+  This quiz game, built with vanilla JavaScript, features multiple functions and a dynamic timer. You can adjust the timer on the fly. When the timer runs out for a question, the current answer is displayed, and the user is locked out from answering. Switching between questions also locks you out if the question is answered or times out. In this case, either your answer or the correct answer (due to timeout) is shown. Additionally, the timer duration decreases for each question you visit and doesn't reset.
   
 <br>
 
 ## 📊Status
 ### Creator : HamidReza Rajabpour
 #### ⚙️ Technology used : HTML, Css, Scss, JS
-#### 〽️ style used : `Transform`, `3d-transforms` , `flex` , `animation` `bootstrap` `offset-path`
+#### 〽️ style used : `Transform` , `flex` , `bootstrap` `offset-path` `JavaScript`
 <br>
 
 ## 🌐Social Media
