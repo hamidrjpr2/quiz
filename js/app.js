@@ -161,7 +161,7 @@ function setQuestion() {
                 question: data[globalFlag].question,
                 answer: data[globalFlag].trueOne,
             })
-            data[globalFlag].isAnsewered == true
+            data[globalFlag].isAnsewered = true
             State(ansCount)
             ansCount++
             _wAudio.volume = .1
