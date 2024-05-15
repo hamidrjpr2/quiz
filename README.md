@@ -1,6 +1,6 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/hamidrjpr2/quiz?style=flat&logo=star) ![GitHub language count](https://img.shields.io/github/languages/count/hamidrjpr2/quiz?color=%23c1121f) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/hamidrjpr2/quiz)
 
-# Quiz App `Dynamic`
+# Quiz App `Dynamic` `Responsive`
 
 <h4 align="center">
   <span>Project Live Demo -> </span>
