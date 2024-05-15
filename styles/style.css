@@ -49,8 +49,8 @@
   border-bottom: 5px solid white;
   -webkit-animation: border-spin 5s infinite linear;
           animation: border-spin 5s infinite linear;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @-webkit-keyframes border-spin {
@@ -74,8 +74,8 @@
   border-radius: 50%;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
-  -webkit-animation-name: move .5s;
-          animation-name: move .5s;
+  -webkit-animation-name: move 0.5s;
+          animation-name: move 0.5s;
 }
 
 .profile > div > .icons {
@@ -94,15 +94,15 @@
 }
 
 .profile > div > .icons > a {
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   opacity: 0;
   color: snow;
   position: absolute;
   offset-rotate: 360deg;
   offset-distance: 0%;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .profile > div > .icons > a:nth-of-type(1) {
@@ -119,8 +119,8 @@
 
 .profile > div > .icons > a:nth-of-type(3) {
   offset-path: path("M149.65,125H3.7c0,0-5.61-84.39,83.8-116.13 c0,0,17.15-6.61,40.89-5.83c0,0,20.83,0.11,40.87,8.21");
-  -webkit-transition-delay: .5s;
-          transition-delay: .5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 
 .profile > div > .icons > a:nth-of-type(4) {
@@ -161,12 +161,13 @@
   font-size: 30px;
   color: white;
   font-weight: normal;
-  text-shadow: -2px 0px 0px black, 2px 0px 0px black, 0px -2px 0px black, 0px 2px 0px black;
+  text-shadow: -2px 0px 0px black, 2px 0px 0px black, 0px -2px 0px black,
+ 0px 2px 0px black;
 }
 
 main {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,9 +179,7 @@ main {
           align-items: start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background: #4ea8de;
-  background: -webkit-gradient(linear, left top, left bottom, from(#4ea8de), color-stop(50%, #48bfe3), to(#64dfdf));
-  background: linear-gradient(180deg, #4ea8de 0%, #48bfe3 50%, #64dfdf 100%);
+  background: #0f1c2e;
   padding: 20% 5%;
 }
 
@@ -189,20 +188,23 @@ main > .quiz-start {
   cursor: pointer;
   width: 220px;
   height: 50px;
-  background: transparent;
-  border: 2px solid #f0ebd8;
-  -webkit-transition: .4s;
-  transition: .4s;
+  background: #cee8ff;
+  border: 3px solid transparent;
+  -webkit-transition: 0.9s ease-in;
+  transition: 0.9s ease-in;
+  border-radius: 40px;
 }
 
 main > .quiz-start:hover {
-  border: 2px solid transparent;
-  background: #f0ebd8;
+  color: #cee8ff;
+  background: transparent;
+  border: 3px solid #cee8ff;
 }
 
 main > .container {
   display: none;
-  background: #3e5c76;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1f2b3e), to(#192436));
+  background: linear-gradient(180deg, #1f2b3e 0%, #192436 100%);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   border-radius: 30px;
@@ -215,10 +217,15 @@ main > .container {
           flex-direction: column;
   -webkit-transition: 1s ease-out;
   transition: 1s ease-out;
-  margin-bottom: 40px;
+  margin-bottom: 200px;
+  position: relative;
+  z-index: 20;
 }
 
 main > .container > .time {
+  color: #cee8ff;
+  margin-top: 15px;
+  font-size: 20px;
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -245,17 +252,17 @@ main > .container > .quiz > .question {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  border-radius: 5px;
+  border-radius: 20px;
   margin: 15px 0;
-  font-size: 12px;
+  font-size: 17px;
   font-weight: lighter;
-  background: #073b4c;
-  padding: 20px;
+  background: #1f3a5f;
+  padding: 50px 20px;
   text-align: center;
 }
 
 main > .container > .quiz > .question > h2 {
-  color: white;
+  color: #e0e0e0;
 }
 
 main > .container > .quiz > .options {
@@ -271,8 +278,8 @@ main > .container > .quiz > .options {
 main > .container > .quiz > .options > .option {
   width: 100%;
   margin: 5px;
-  height: 50px;
-  background: #f0ebd8;
+  height: 90px;
+  background: #1f3a5f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,14 +291,15 @@ main > .container > .quiz > .options > .option {
           align-items: center;
   font-family: Helvetica;
   cursor: pointer;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   border-radius: 5px;
   font-size: 25px;
+  color: #ffffff;
 }
 
 main > .container > .quiz > .options > .option:hover {
-  background: #d1cdbe;
+  background: #3d5a83;
 }
 
 main > .container > .quiz > .options > .wrong {
@@ -332,9 +340,9 @@ main > .container > .quiz > .buttons {
 }
 
 main > .container > .quiz > .buttons > button {
-  border: 1px solid white;
-  background: none;
-  padding: 10px 25px;
+  border: none;
+  background: #cee8ff;
+  padding: 20px 50px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -342,6 +350,47 @@ main > .container > .quiz > .buttons > button {
 .not-chosen {
   pointer-events: none !important;
   background: gray !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile {
+    width: 150px;
+    height: 150px;
+  }
+  .profile > .outline {
+    width: 150px;
+    height: 150px;
+  }
+  .profile > div {
+    width: 150px;
+    height: 150px;
+  }
+  .profile > div > .icons {
+    left: 60%;
+    width: 150px;
+    height: 150px;
+  }
+  .profile > div > .icons > a {
+    font-size: 22px;
+  }
+  .profile > div > .icons > a:nth-of-type(1) {
+    offset-path: path("M 60.39 62.5 H 1.85 c 0 0 -5.805 -55.195 30.1464 -57.6856");
+    -webkit-transition-delay: 1.5s;
+            transition-delay: 1.5s;
+  }
+  .profile > div > .icons > a:nth-of-type(2) {
+    offset-path: path("M 60.39 62.5 H 1.85 c 0 0 -5.805 -55.195 57.1464 -64.6856");
+    -webkit-transition-delay: 1s;
+            transition-delay: 1s;
+  }
+  .profile > div > .icons > a:nth-of-type(3) {
+    offset-path: path("M 60.39 62.5 H 1.85 c 0 0 -5.805 -55.195 84.1464 -64.6856");
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+  }
+  .profile > div > .icons > a:nth-of-type(4) {
+    offset-path: path("M 60.39 62.5 H 1.85 c 0 0 -5.805 -55.195 111.1464 -57.6856");
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
